@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "819801796264",
+    "firebase_url": "https://one-moon-441003-a8-default-rtdb.firebaseio.com",
+    "project_id": "one-moon-441003-a8",
+    "storage_bucket": "one-moon-441003-a8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819801796264:android:a7a29627c1513e304f5c9d",
+        "android_client_info": {
+          "package_name": "com.chautari.admin_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH54egHne65lr8rdvcaUjhfm-gbQYt3hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819801796264:android:bac66f731876ce614f5c9d",
+        "android_client_info": {
+          "package_name": "com.chautari.user_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH54egHne65lr8rdvcaUjhfm-gbQYt3hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

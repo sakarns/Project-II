@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.chautari.admin_app.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.chautari.admin_app.ui.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.chautari.admin_app.ui.CategoriesFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories">
+
+        <action
+            android:id="@+id/action_categoriesFragment_to_addCategoriesFragment"
+            app:destination="@id/addCategoriesFragment" />
+
+        <action
+            android:id="@+id/action_categoriesFragment_to_viewCategoriesFragment"
+            app:destination="@id/viewCategoriesFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/viewCategoriesFragment"
+        android:name="com.chautari.admin_app.ui.ViewCategoriesFragment"
+        android:label="View Products"
+        tools:layout="@layout/fragment_view_categories">
+
+        <action
+            android:id="@+id/action_viewCategoriesFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_viewCategoriesFragment_to_addCategoriesFragment"
+            app:destination="@id/addCategoriesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCategoriesFragment"
+        android:name="com.chautari.admin_app.ui.AddCategoriesFragment"
+        android:label="Add Categories"
+        tools:layout="@layout/fragment_add_categories" />
+
+
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.chautari.admin_app.ui.ProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_products" />
+
+    <fragment
+        android:id="@+id/viewProductsFragment"
+        android:name="com.chautari.admin_app.ui.ViewProductsFragment"
+        android:label="View Products"
+        tools:layout="@layout/fragment_view_product" />
+
+    <fragment
+        android:id="@+id/addProductsFragment"
+        android:name="com.chautari.admin_app.ui.AddProductsFragment"
+        android:label="Add Products"
+        tools:layout="@layout/fragment_add_products" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.chautari.admin_app.ui.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_viewUserProfileFragment"
+            app:destination="@id/viewUserProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_viewAdminProfileFragment"
+            app:destination="@id/viewAdminProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_addUserProfileFragment"
+            app:destination="@id/viewUserProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_addAdminProfileFragment"
+            app:destination="@id/viewAdminProfileFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewAdminProfileFragment"
+        android:name="com.chautari.admin_app.ui.ViewAdminProfileFragment"
+        android:label="View Profile"
+        tools:layout="@layout/fragment_view_admin_profile">
+
+        <action
+            android:id="@+id/action_viewAdminProfileFragment_to_addAdminProfileFragment"
+            app:destination="@id/addAdminProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewUserProfileFragment"
+        android:name="com.chautari.admin_app.ui.ViewAdminProfileFragment"
+        android:label="View Profile"
+        tools:layout="@layout/fragment_view_admin_profile">
+
+        <action
+            android:id="@+id/action_viewUserProfileFragment_to_addUserProfileFragment"
+            app:destination="@id/addUserProfileFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addAdminProfileFragment"
+        android:name="com.chautari.admin_app.ui.AddAdminProfileFragment"
+        android:label="Add Profile"
+        tools:layout="@layout/fragment_add_admin_profile" />
+
+    <fragment
+        android:id="@+id/addUserProfileFragment"
+        android:name="com.chautari.admin_app.ui.AddAdminProfileFragment"
+        android:label="Add Profile"
+        tools:layout="@layout/fragment_add_user_profile" />
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.chautari.admin_app.ui.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.chautari.admin_app.ui.OrderHistoryFragment"
+        android:label="Order History"
+        tools:layout="@layout/fragment_order_history" />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.chautari.admin_app.ui.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/helpSupportFragment"
+        android:name="com.chautari.admin_app.ui.HelpSupportFragment"
+        android:label="Help &amp; Support"
+        tools:layout="@layout/fragment_help_support" />
+
+</navigation>
